@@ -7,7 +7,7 @@ A more complete Stata markdown style for the LaTeX `lstlisting` package.
   - `lstlisting` language style definitions: http://ctan.mirrors.hoobly.com/macros/latex/contrib/listings/lstdrvrs.pdf
  
 ## How to use
-Just `\include{}` or `\input{}` the path to the source file and set the language in your `lstlisting` environment to `Stata`.
+Just `\include{}` or `\input{}` the .tex file in this repository and set the language in your `lstlisting` environment to `Stata`.
 ```
 \begin{lstlisting}[language=Stata, numbers=none]
 . display binomialp(4, 2, 1/6)
@@ -16,7 +16,7 @@ Just `\include{}` or `\input{}` the path to the source file and set the language
 ```
 
 ## Rendered example
-![rendered example][sample.png]
+![rendered example](sample.png)
 
 ## See also
   - https://gist.github.com/kongs-sublime/10862838
