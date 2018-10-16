@@ -1,0 +1,44 @@
+\documentclass{article}
+
+% packages
+\usepackage{color}
+\usepackage{listings}
+
+\definecolor{codeblue}{rgb}{0.29296875, 0.51953125, 0.68359375}
+\definecolor{codegreen}{rgb}{0.47265625, 0.62890625, 0.40234375}
+\definecolor{codegray}{rgb}{0.95703125, 0.95703125, 0.95703125}
+\definecolor{codecrimson}{rgb}{0.87109375,0.3984375,0.3984375}
+
+\lstset{frame=tb,
+  backgroundcolor=\color{codegray},
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{codeblue},
+  commentstyle=\color{codegreen},
+  stringstyle=\color{codecrimson},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  frame=tlbr,framesep=4pt,framerule=0pt
+}
+
+\input{stata-lstlistings.tex}
+
+\begin{document}
+\noindent Here's some Stata code, with syntax highlighted using the \texttt{listings} package:\\
+
+\begin{lstlisting}[language=Stata, numbers=none]
+. display binomialp(4, 2, 1/6)
+.11574074
+
+. regress exp age ownrent income incomesq
+\end{lstlisting}
+
+\end{document}
+
+

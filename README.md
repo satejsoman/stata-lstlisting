@@ -14,7 +14,9 @@ Just `\include{}` or `\input{}` the path to the source file and set the language
 .11574074
 \end{lstlisting} 
 ```
+
 ## Rendered example
+![rendered example][sample.png]
 
 ## See also
   - https://gist.github.com/kongs-sublime/10862838
